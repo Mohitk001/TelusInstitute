@@ -83,7 +83,7 @@ Telus Institute is a web application designed to supplement digital learning thr
      ```bash
      npm start
      ```
-   - Open [http://localhost:3000](http://localhost:3000) in your browser.
+   - Open [LIVE LINK](https://telus-institute-qev4.vercel.app/) in your browser.
 
 ---
 
