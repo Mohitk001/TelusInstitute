@@ -121,7 +121,7 @@ export const Blog = () => {
                     <span className='text-[14px] ml-2'>{selectedBlog.author}</span>
                   </div>
                   <div className='flex items-center'>
-                    {renderStars(selectedBlog.rating)} {/* Render stars based on rating */}
+                    {renderStars(selectedBlog.rating)}
                   </div>
                 </div>
               </div>
