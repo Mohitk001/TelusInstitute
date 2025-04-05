@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Layout } from "./components/common/Layout";
 import { Home } from "./pages/Home/Home.jsx";
-// import { BlogSinglePage } from "./components/common/BlogSinglePage";
+import { CourseDetails } from "./pages/Course/CourseDetails.jsx";
 import { About } from "./pages/About/About.jsx";
 import { Courses } from "./pages/Course/Courses.jsx";
 import { Blog } from "./pages/Blog/Blog.jsx";
@@ -40,6 +40,7 @@ function App() {
             </Layout>
           }
         />
+        <Route path="/courses/:id" element={<CourseDetails />} />
         <Route
           path='/instructor'
           element={

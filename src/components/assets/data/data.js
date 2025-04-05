@@ -279,3 +279,231 @@ export const instructors = [
     hoursTaught: 10000,
   },
 ];
+
+export const coursedetail = [
+  {
+    id: 1,
+    title: "Complete Web Development Bootcamp",
+    cover: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    category1: "Web Development",
+    category2: "Full Stack",
+    lessons: 45,
+    rating: 4.8,
+    instructorName: "Sarah Johnson",
+    instructorImage: "https://randomuser.me/api/portraits/women/44.jpg",
+    price: 4999,
+    description: "Become a full-stack developer with this comprehensive bootcamp",
+    longDescription: "This intensive bootcamp will take you from beginner to professional web developer. You'll learn HTML, CSS, JavaScript, React, Node.js, Express, and MongoDB to build complete web applications. By the end, you'll have a portfolio of projects and the skills to get hired as a developer.",
+    students: 3250,
+    duration: 62,
+    reviews: 892,
+    learningOutcomes: [
+      "Build responsive websites with HTML/CSS",
+      "Create interactive UIs with React",
+      "Develop RESTful APIs with Node/Express",
+      "Work with databases (MongoDB)",
+      "Deploy full-stack applications",
+      "Implement authentication and security"
+    ],
+    curriculum: [
+      {
+        title: "HTML & CSS Fundamentals",
+        lessons: [
+          { title: "Introduction to HTML", duration: 45 },
+          { title: "CSS Styling Basics", duration: 60 },
+          { title: "Responsive Design", duration: 75 },
+          { title: "CSS Flexbox and Grid", duration: 90 }
+        ]
+      },
+      {
+        title: "JavaScript Programming",
+        lessons: [
+          { title: "JavaScript Basics", duration: 60 },
+          { title: "DOM Manipulation", duration: 75 },
+          { title: "ES6+ Features", duration: 90 },
+          { title: "Async JavaScript", duration: 60 }
+        ]
+      },
+      {
+        title: "React Development",
+        lessons: [
+          { title: "React Components", duration: 75 },
+          { title: "State Management", duration: 90 },
+          { title: "React Hooks", duration: 60 },
+          { title: "React Router", duration: 45 }
+        ]
+      },
+      {
+        title: "Backend with Node.js",
+        lessons: [
+          { title: "Node.js Basics", duration: 60 },
+          { title: "Express Framework", duration: 75 },
+          { title: "MongoDB and Mongoose", duration: 90 },
+          { title: "Authentication", duration: 60 }
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Data Science with Python",
+    cover: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    category1: "Data Science",
+    category2: "Python",
+    lessons: 36,
+    rating: 4.7,
+    instructorName: "Michael Chen",
+    instructorImage: "https://randomuser.me/api/portraits/men/32.jpg",
+    price: 5999,
+    description: "Master data analysis, visualization, and machine learning with Python",
+    longDescription: "This comprehensive course teaches you how to work with data using Python. You'll learn NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn to analyze data, create visualizations, and build machine learning models. Perfect for aspiring data scientists and analysts.",
+    students: 2450,
+    duration: 48,
+    reviews: 723,
+    learningOutcomes: [
+      "Clean and preprocess data",
+      "Perform exploratory data analysis",
+      "Create insightful visualizations",
+      "Build predictive models",
+      "Understand machine learning concepts",
+      "Work with real-world datasets"
+    ],
+    curriculum: [
+      {
+        title: "Python for Data Science",
+        lessons: [
+          { title: "Python Basics Review", duration: 45 },
+          { title: "NumPy Fundamentals", duration: 60 },
+          { title: "Pandas DataFrames", duration: 75 },
+          { title: "Data Cleaning", duration: 90 }
+        ]
+      },
+      {
+        title: "Data Visualization",
+        lessons: [
+          { title: "Matplotlib Basics", duration: 60 },
+          { title: "Seaborn Visualizations", duration: 75 },
+          { title: "Plotly Interactive Charts", duration: 60 },
+          { title: "Dashboard Creation", duration: 45 }
+        ]
+      },
+      {
+        title: "Machine Learning",
+        lessons: [
+          { title: "ML Fundamentals", duration: 75 },
+          { title: "Supervised Learning", duration: 90 },
+          { title: "Unsupervised Learning", duration: 60 },
+          { title: "Model Evaluation", duration: 45 }
+        ]
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Mobile App Development with Flutter",
+    cover: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    category1: "Mobile",
+    category2: "Flutter",
+    lessons: 30,
+    rating: 4.9,
+    instructorName: "Emma Wilson",
+    instructorImage: "https://randomuser.me/api/portraits/women/65.jpg",
+    price: 4499,
+    description: "Build beautiful cross-platform apps with Flutter and Dart",
+    longDescription: "Learn to develop stunning mobile applications for both iOS and Android using Flutter. This course covers everything from basic widgets to state management, API integration, and app publishing. By the end, you'll have built several complete apps for your portfolio.",
+    students: 1875,
+    duration: 40,
+    reviews: 542,
+    learningOutcomes: [
+      "Build cross-platform mobile apps",
+      "Understand Flutter widgets",
+      "Manage app state effectively",
+      "Integrate with APIs",
+      "Implement navigation",
+      "Publish to app stores"
+    ],
+    curriculum: [
+      {
+        title: "Flutter Fundamentals",
+        lessons: [
+          { title: "Dart Language Basics", duration: 45 },
+          { title: "Flutter Widgets", duration: 60 },
+          { title: "Layout and Styling", duration: 75 },
+          { title: "Navigation", duration: 45 }
+        ]
+      },
+      {
+        title: "State Management",
+        lessons: [
+          { title: "setState Basics", duration: 60 },
+          { title: "Provider Pattern", duration: 75 },
+          { title: "Riverpod", duration: 60 },
+          { title: "BLoC Pattern", duration: 45 }
+        ]
+      },
+      {
+        title: "Advanced Topics",
+        lessons: [
+          { title: "API Integration", duration: 75 },
+          { title: "Firebase Integration", duration: 90 },
+          { title: "Animations", duration: 60 },
+          { title: "App Publishing", duration: 45 }
+        ]
+      }
+    ]
+  },
+  {
+    id: 4,
+    title: "UX/UI Design Masterclass",
+    cover: "https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    category1: "Design",
+    category2: "UX/UI",
+    lessons: 28,
+    rating: 4.6,
+    instructorName: "David Rodriguez",
+    instructorImage: "https://randomuser.me/api/portraits/men/22.jpg",
+    price: 3999,
+    description: "Learn professional UX/UI design principles and tools",
+    longDescription: "This masterclass teaches you the complete UX/UI design process from research to high-fidelity prototypes. You'll learn Figma, user research methods, information architecture, interaction design, and how to create design systems. Perfect for beginners and those looking to improve their design skills.",
+    students: 1560,
+    duration: 35,
+    reviews: 432,
+    learningOutcomes: [
+      "Conduct user research",
+      "Create wireframes and prototypes",
+      "Design user interfaces",
+      "Work with Figma",
+      "Understand design systems",
+      "Test and iterate designs"
+    ],
+    curriculum: [
+      {
+        title: "UX Fundamentals",
+        lessons: [
+          { title: "UX Design Principles", duration: 45 },
+          { title: "User Research Methods", duration: 60 },
+          { title: "Personas and User Journeys", duration: 45 },
+          { title: "Information Architecture", duration: 60 }
+        ]
+      },
+      {
+        title: "UI Design",
+        lessons: [
+          { title: "Figma Basics", duration: 60 },
+          { title: "Visual Design Principles", duration: 75 },
+          { title: "Typography", duration: 45 },
+          { title: "Color Theory", duration: 60 }
+        ]
+      },
+      {
+        title: "Prototyping",
+        lessons: [
+          { title: "Wireframing", duration: 45 },
+          { title: "Interactive Prototypes", duration: 60 },
+          { title: "Design Systems", duration: 75 },
+          { title: "User Testing", duration: 45 }
+        ]
+      }
+    ]
+  }
+];

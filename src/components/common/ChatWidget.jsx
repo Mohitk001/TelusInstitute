@@ -106,8 +106,8 @@ export const ChatWidget = () => {
 
   // Function to call Gemini API
   async function callGeminiAPI(userQuestion) {
-    const apiKey = "YOUR_GEMINI_API_KEY"; // Replace with your Gemini API key
-    const apiUrl = "https://api.gemini.com/v1/generate"; // Replace with the actual Gemini API endpoint
+    const apiKey = "YOUR_GEMINI_API_KEY"; // Gemini API key
+    const apiUrl = "https://api.gemini.com/v1/generate"; // Gemini API endpoint
 
     try {
       const response = await fetch(apiUrl, {
