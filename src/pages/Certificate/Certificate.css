@@ -1,52 +1,52 @@
 .certificate-container {
-    max-width: 1200px;
+    max-width: 800px; /* reduced from 1200px */
     margin: 40px auto;
-    padding: 20px;
+    padding: 15px;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .form-section {
     background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
 }
 
 .form-section h2 {
     color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 22px;
+    margin-bottom: 18px;
     text-align: center;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: #555;
     font-weight: 500;
 }
 
 .form-group input {
     width: 100%;
-    padding: 10px;
+    padding: 9px;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 16px;
+    border-radius: 6px;
+    font-size: 15px;
 }
 
 button {
     background-color: #2d80f5;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
     transition: background-color 0.3s;
 }
@@ -68,13 +68,13 @@ button:disabled {
 
 /* Certificate Styles */
 .certificate-section {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .certificate {
     background: white;
-    padding: 40px;
-    border: 20px solid #2d80f5;
+    padding: 30px;
+    border: 16px solid #2d80f5;
     border-radius: 10px;
     margin-bottom: 20px;
     position: relative;
@@ -87,61 +87,56 @@ button:disabled {
 }
 
 .certificate-header {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .certificate-header h1 {
-    font-size: 48px;
+    font-size: 40px;
     color: #2d80f5;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-weight: 700;
 }
 
 .logo {
-    max-width: 150px;
-    margin-bottom: 20px;
+    max-width: 120px;
+    margin-bottom: 18px;
 }
 
 .certificate-body {
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 .certificate-text {
-    font-size: 20px;
+    font-size: 18px;
     color: #555;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
 .student-name {
-    font-size: 36px;
+    font-size: 30px;
     color: #333;
-    margin: 20px 0;
+    margin: 18px 0;
     font-weight: 700;
 }
 
 .course-name {
-    font-size: 28px;
+    font-size: 24px;
     color: #2d80f5;
-    margin: 20px 0;
+    margin: 18px 0;
     font-weight: 600;
 }
 
-.certificate-id {
-    font-size: 16px;
-    color: #666;
-    margin-top: 30px;
-}
-
+.certificate-id,
 .issue-date {
-    font-size: 16px;
+    font-size: 14px;
     color: #666;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .certificate-footer {
     display: flex;
     justify-content: space-around;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .signature {
@@ -149,7 +144,7 @@ button:disabled {
 }
 
 .signature-line {
-    width: 200px;
+    width: 180px;
     height: 2px;
     background-color: #333;
     margin-bottom: 10px;
@@ -158,7 +153,7 @@ button:disabled {
 .print-button {
     display: block;
     width: 100%;
-    max-width: 300px;
+    max-width: 260px;
     margin: 20px auto;
     background-color: #28a745;
 }
@@ -169,11 +164,11 @@ button:disabled {
 
 .certificate-wrapper {
     background: white;
-    padding: 20px;
+    padding: 15px;
     margin: 0 auto;
     width: 100%;
-    max-width: 1000px;
-    min-height: 700px;
+    max-width: 850px;
+    min-height: 600px;
     position: relative;
 }
 
@@ -185,12 +180,12 @@ button:disabled {
     body * {
         visibility: hidden;
     }
-    
+
     .certificate-wrapper,
     .certificate-wrapper * {
         visibility: visible;
     }
-    
+
     .certificate-wrapper {
         position: absolute;
         left: 0;
@@ -202,8 +197,8 @@ button:disabled {
     }
 
     .certificate {
-        border: 20px solid #2d80f5 !important;
-        padding: 40px !important;
+        border: 16px solid #2d80f5 !important;
+        padding: 30px !important;
         margin: 0 !important;
         height: 100%;
         box-sizing: border-box;
@@ -219,4 +214,4 @@ button:disabled {
     .certificate-content {
         break-inside: avoid;
     }
-} 
+}
