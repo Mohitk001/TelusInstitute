@@ -1,4 +1,4 @@
-course .box {
+.courses .box {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
@@ -6,7 +6,7 @@ course .box {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-course .box::before {
+.courses .box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -34,7 +34,7 @@ course .box::before {
 }
 
 /* Rotating Border Effect */
-course .box::after {
+.courses .box::after {
   content: "";
   position: absolute;
   top: -50%;
@@ -63,7 +63,7 @@ course .box::after {
 }
 
 /* Inner White Background */
-course .box .content {
+.courses .box .content {
   position: relative;
   z-index: 3;
   background: white;
@@ -72,44 +72,82 @@ course .box .content {
 }
 
 /* Ensure the image and text are above the borders */
-course .images,
-course .text,
-course .user,
-course .flex {
+.courses .images,
+.courses .text,
+.courses .user,
+.courses .flex {
   position: relative;
   z-index: 4;
 }
 
 /* Responsive for screens ≤ 1080px */
 @media only screen and (max-width: 1080px) {
-  course .box {
+  .courses .box {
     margin: 16px auto;
     border-radius: 8px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 
-  course .box::before {
+  .courses .box::before {
     border-width: 3px;
   }
 
-  course .box::after {
+  .courses .box::after {
     width: 180%;
     height: 180%;
     top: -40%;
     left: -40%;
   }
 
-  course .box .content {
+  .courses .box .content {
     margin: 2px;
     padding: 16px;
     font-size: 15px;
   }
 
-  course .images,
-  course .text,
-  course .user,
-  course .flex {
+  .courses .images,
+  .courses .text,
+  .courses .user,
+  .courses .flex {
     text-align: center;
     padding: 10px 0;
+  }
+}
+
+/* Additional responsive styles for smaller screens ≤ 639px */
+@media only screen and (max-width: 639px) {
+  .courses .box {
+    margin: 12px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .courses .box .content {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .courses .images {
+    height: 200px;
+  }
+
+  .courses .text h3 {
+    font-size: 1rem;
+    height: auto;
+  }
+
+  .courses .user {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .courses .user img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .courses .user span {
+    margin-top: 6px;
+    font-size: 13px;
   }
 }
