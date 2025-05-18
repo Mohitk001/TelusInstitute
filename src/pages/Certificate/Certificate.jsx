@@ -15,7 +15,7 @@ export function Certificate() {
     setError('');
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/certificate/${enrollmentId.trim()}`
+        `https://telusinstitute.onrender.com/api/certificate/${enrollmentId.trim()}`
       );
       setCertificate(response.data);
     } catch (err) {
