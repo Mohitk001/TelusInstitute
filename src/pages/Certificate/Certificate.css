@@ -1,0 +1,246 @@
+/* Base Styles */
+.certificate-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Verification Section */
+.verification-section {
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d80f5;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.search-container {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2d80f5;
+  box-shadow: 0 0 0 3px rgba(45, 128, 245, 0.2);
+}
+
+.verify-button {
+  background-color: #2d80f5;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verify-button:hover {
+  background-color: #1c6cd4;
+}
+
+.verify-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button-loading {
+  display: flex;
+  align-items: center;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.error-message {
+  color: #dc3545;
+  padding: 0.75rem;
+  background-color: #f8d7da;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+/* Certificate Display */
+.certificate-display {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.certificate-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.student-profile {
+  display: flex;
+  justify-content: center;
+}
+
+.student-image-container {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #e0e7ff;
+}
+
+.student-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-placeholder {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  border: 4px solid #e0e7ff;
+}
+
+.student-details {
+  flex: 1;
+}
+
+.student-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.detail-label {
+  font-weight: 500;
+  color: #4b5563;
+  min-width: 120px;
+  margin-right: 1rem;
+}
+
+.detail-value {
+  color: #374151;
+  flex: 1;
+}
+
+.highlight {
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.course-section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d80f5;
+  margin-bottom: 1rem;
+}
+
+.certificate-footer {
+  padding: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.verification-text {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.verification-id {
+  color: #9ca3af;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .search-group {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .search-input {
+    min-width: 300px;
+  }
+
+  .certificate-content {
+    flex-direction: row;
+    padding: 2rem;
+  }
+
+  .student-profile {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+
+  .student-image-container,
+  .image-placeholder {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .student-name {
+    font-size: 1.5rem;
+  }
+}

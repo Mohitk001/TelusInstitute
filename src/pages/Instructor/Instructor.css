@@ -1,0 +1,74 @@
+/* Instructor.css */
+.instructor .hover\:glow:hover {
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.6);
+}
+
+.instructor .image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructor .overlay h2 {
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0 1rem;
+}
+
+.instructor .box {
+  transition: all 0.3s ease;
+}
+
+.instructor .slick-slide {
+  padding: 0 10px;
+}
+
+.instructor .slick-dots li button:before {
+  font-size: 10px;
+  color: #6b7280;
+}
+
+.instructor .slick-dots li.slick-active button:before {
+  color: #8b5cf6;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+  .instructor .overlay h2 {
+    font-size: 0.875rem;
+  }
+
+  .instructor .slick-slide {
+    padding: 0 5px;
+  }
+
+  .instructor .box {
+    padding: 1rem;
+  }
+
+  .instructor .image-card {
+    height: 48;
+  }
+}
+
+/* Tablet Adjustments */
+@media (min-width: 481px) and (max-width: 768px) {
+  .instructor .overlay h2 {
+    font-size: 1.125rem;
+  }
+
+  .instructor .image-card {
+    height: 56;
+  }
+}
+
+/* Desktop Adjustments */
+@media (min-width: 769px) {
+  .instructor .overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .instructor .image-card {
+    height: 72;
+  }
+}
