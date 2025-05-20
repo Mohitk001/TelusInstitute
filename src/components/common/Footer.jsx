@@ -100,31 +100,42 @@ export const Footer = () => {
         </div>
 
         {/* Social Icons */}
-        <div className='containe mt-8 flex justify-center space-x-6'>
-          <a href='https://www.facebook.com/share/15aR28E3db/?mibextid=wwXIfr' className='text-blue-600 hover:text-blue-800 transition-all duration-300'>
-            <FaFacebook size={24} />
-          </a>
-          <a href="https://twitter.com" className="text-black hover:text-gray-800 transition-all duration-300">
-  <FaXTwitter size={24} />
-</a>
-          <a href='https://www.instagram.com/telusinstitute?igsh=MWpzc2V2dHZ4c3Bjcw%3D%3D&utm_source=qr' className='text-pink-600 hover:text-pink-800 transition-all duration-300'>
-            <FaInstagram size={24} />
-          </a>
-          <a
-  href="https://youtube.com/@telusinstitute?si=vmv6N_eQ4-bUSx2f"
-  className="text-red-600 hover:text-red-700 transition-all duration-300"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <FaYoutube size={24} />
-</a>
-        </div>
-        <div className='text-center mt-8'>
-          <h4 className='animated-text text-4xl font-bold'>
-            <span className='bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent'>T</span>elus
-            <span className='bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent'>I</span>nstitute
-          </h4>
-        </div>
+     {/* Social Icons */}
+<div className='containe mt-8 flex justify-center space-x-6'>
+  <a
+    href='https://www.facebook.com/share/15aR28E3db/?mibextid=wwXIfr'
+    className='text-blue-600 hover:text-blue-800 transition-all duration-300'
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaFacebook size={24} />
+  </a>
+  <a
+    href="https://twitter.com"
+    className="text-black hover:text-gray-800 transition-all duration-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaXTwitter size={24} />
+  </a>
+  <a
+    href='https://www.instagram.com/telusinstitute?igsh=MWpzc2V2dHZ4c3Bjcw%3D%3D&utm_source=qr'
+    className='text-pink-600 hover:text-pink-800 transition-all duration-300'
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaInstagram size={24} />
+  </a>
+  <a
+    href="https://youtube.com/@telusinstitute?si=vmv6N_eQ4-bUSx2f"
+    className="text-red-600 hover:text-red-700 transition-all duration-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <FaYoutube size={24} />
+  </a>
+</div>
+
       </footer>
     </>
   );
