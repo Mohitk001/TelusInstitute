@@ -64,7 +64,7 @@ export const courses = [
     instructorName: "Gurdarshan Kaur", // Gurdarshan Kaur
     category1: "Computer Science",
     category2: "Advanced",
-    price: 8000,
+    price: 4000,
   },
   {
     id: 3,
