@@ -72,8 +72,8 @@ export const courses = [
     title: "Diploma in Computer Applications",
     lessons: 18,
     rating: "4.6 (99)",
-    instructorImage: "/images/img3.jpg", // Dr. Daljeet Singh
-    instructorName: "Dr. Daljeet Singh", // Dr. Daljeet Singh
+    instructorImage: "/images/img3.jpg", // Er. Daljit Singh
+    instructorName: "Er. Daljit Singh", // Er. Daljit Singh
     category1: "Computer Applications",
     category2: "Diploma",
     price: 10000,
@@ -108,8 +108,8 @@ export const courses = [
     title: "Tally with GST Course",
     lessons: 31,
     rating: "4.0 (80)",
-    instructorImage: "/images/img3.jpg", // Dr. Daljeet Singh
-    instructorName: "Dr. Daljeet Singh", // Dr. Daljeet Singh
+    instructorImage: "/images/img3.jpg", // Er. Daljit Singh
+    instructorName: "Er. Daljit Singh", // Er. Daljit Singh
     category1: "Finance",
     category2: "GST",
     price: 4000,
@@ -144,8 +144,8 @@ export const courses = [
     title: "Data Entry Course",
     lessons: 13,
     rating: "4.2 (150)",
-    instructorImage: "/images/img3.jpg", // Dr. Daljeet Singh
-    instructorName: "Dr. Daljeet Singh", // Dr. Daljeet Singh
+    instructorImage: "/images/img3.jpg", // Er. Daljit Singh
+    instructorName: "Er. Daljit Singh", // Er. Daljit Singh
     category1: "Data Entry",
     category2: "Basic",
     price: 8000,
@@ -192,7 +192,7 @@ export const blogs = [
     id: 1,
     cover: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80",
     title: "Celebrating Student Success: Our Top Achievers of 2023",
-    author: "Dr. Daljeet Singh",
+    author: "Er. Daljit Singh",
     authorImage: "images/img3.jpg",
     topic: "Student Achievements",
     content:
@@ -236,7 +236,7 @@ export const blogs = [
     id: 5,
     cover: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
     title: "Making a Global Impact: Our Alumni Around the World",
-    author: "Dr. Daljeet Singh",
+    author: "Er. Daljit Singh",
     authorImage: "images/img3.jpg",
     topic: "Global Impact",
     content:
@@ -277,7 +277,7 @@ export const instructors = [
   },
   {
     id: 3,
-    name: "Dr. Daljeet Singh",
+    name: "Er. Daljit Singh",
     rating: 5,  
     photo: "/images/img3.jpg",
     subject: "Technical Instructor",
