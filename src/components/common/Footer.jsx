@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaFacebook, FaInstagram, FaLinkedin, FaArrowRight } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaArrowRight } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { GiOpenBook } from "react-icons/gi"; // Animated book icon
-
+import { FaYoutube } from 'react-icons/fa';
 export const Footer = () => {
   return (
     <>
@@ -101,18 +101,23 @@ export const Footer = () => {
 
         {/* Social Icons */}
         <div className='containe mt-8 flex justify-center space-x-6'>
-          <a href='https://facebook.com' className='text-blue-600 hover:text-blue-800 transition-all duration-300'>
+          <a href='https://www.facebook.com/share/15aR28E3db/?mibextid=wwXIfr' className='text-blue-600 hover:text-blue-800 transition-all duration-300'>
             <FaFacebook size={24} />
           </a>
           <a href="https://twitter.com" className="text-black hover:text-gray-800 transition-all duration-300">
   <FaXTwitter size={24} />
 </a>
-          <a href='https://instagram.com' className='text-pink-600 hover:text-pink-800 transition-all duration-300'>
+          <a href='https://www.instagram.com/telusinstitute?igsh=MWpzc2V2dHZ4c3Bjcw%3D%3D&utm_source=qr' className='text-pink-600 hover:text-pink-800 transition-all duration-300'>
             <FaInstagram size={24} />
           </a>
-          <a href='https://linkedin.com' className='text-blue-800 hover:text-blue-900 transition-all duration-300'>
-            <FaLinkedin size={24} />
-          </a>
+          <a
+  href="https://youtube.com/@telusinstitute?si=vmv6N_eQ4-bUSx2f"
+  className="text-red-600 hover:text-red-700 transition-all duration-300"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaYoutube size={24} />
+</a>
         </div>
         <div className='text-center mt-8'>
           <h4 className='animated-text text-4xl font-bold'>
