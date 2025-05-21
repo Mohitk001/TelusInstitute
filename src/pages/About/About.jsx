@@ -4,7 +4,7 @@ import "./About.css";
 
 export const About = () => {
   return (
-    <about>
+    <div className="about">
       <section className="about py-6 sm:py-12 md:py-16 bg-[#F3F4F8]">
         <div className="container mx-auto px-4 sm:px-6 max-w-7xl">
           <div className="heading text-center py-4 sm:py-8 md:py-12">
@@ -60,7 +60,7 @@ export const About = () => {
           </div>
         </div>
       </section>
-    </about>
+    </div>
   );
 };
 
