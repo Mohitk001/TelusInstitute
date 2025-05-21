@@ -8,33 +8,33 @@
   }
 }
 
-about .bounce {
+.about .bounce {
   animation: bounce 1.5s infinite;
 }
 
 /* Scroll Animation */
-about .hidden-card {
+.about .hidden-card {
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-about .hidden-card.show {
+.about .hidden-card.show {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* Mobile-specific optimizations */
 @media (max-width: 640px) {
-  about .about-card {
+  .about .about-card {
     min-height: 160px;
   }
   
-  about .heading h1 {
+  .about .heading h1 {
     line-height: 1.3;
   }
   
-  about .heading span {
+  .about .heading span {
     line-height: 1.4;
   }
 }

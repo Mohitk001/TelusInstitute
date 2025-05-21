@@ -44,7 +44,7 @@ export const ChatWidget = () => {
       response: "The Basic Computer Course aims to provide foundational skills in computer usage, including basic software and hardware operations. It is taught by Kamaljit Kaur. The fee is Rs 2699, and the duration is 3 hours."
     },
     {
-      keywords: ["fees only", "basic computer course"],
+      keywords: ["cost","charge","rate","amount","price","fees only", "basic computer course"],
       response: "The fee for the Basic Computer Course is Rs 2699."
     },
     {
@@ -52,7 +52,7 @@ export const ChatWidget = () => {
       response: "The duration of the Basic Computer Course is 3 hours."
     },
     {
-      keywords: ["faculty only", "basic computer course"],
+      keywords: ["teacher","instructor","tutor","educator","faculty only", "basic computer course"],
       response: "The Basic Computer Course is taught by Kamaljit Kaur."
     },
     {
@@ -60,7 +60,7 @@ export const ChatWidget = () => {
       response: "The 120 hrs Computer Course aims to offer comprehensive training in computer applications for practical proficiency. It is taught by Gurdarshan Kaur. The fee is Rs 4000, and the duration is 120 hours."
     },
     {
-      keywords: ["fees only", "120 hrs computer course"],
+      keywords: ["cost","charge","rate","amount","price","fees only", "120 hrs computer course"],
       response: "The fee for the 120 hrs Computer Course is Rs 8000."
     },
     {
@@ -68,7 +68,7 @@ export const ChatWidget = () => {
       response: "The duration of the 120 hrs Computer Course is 120 hours."
     },
     {
-      keywords: ["faculty only", "120 hrs computer course"],
+      keywords: ["teacher","instructor","tutor","educator","faculty only", "120 hrs computer course"],
       response: "The 120 hrs Computer Course is taught by Gurdarshan Kaur."
     },
     {
@@ -77,7 +77,7 @@ export const ChatWidget = () => {
       response: "The DCA (Diploma in Computer Application) aims to equip students with in-depth knowledge of computer applications for professional use. It is taught by Daljit Singh. The fee is Rs 10000, and the duration is 12 hours."
     },
     {
-      keywords: ["fees only", "dca(diploma in computer application)", "dca"],
+      keywords: ["cost","charge","rate","amount","price","fees only", "dca(diploma in computer application)", "dca"],
       response: "The fee for the DCA (Diploma in Computer Application) is Rs 10000."
     },
     {
@@ -85,7 +85,7 @@ export const ChatWidget = () => {
       response: "The duration of the DCA (Diploma in Computer Application) is 12 hours."
     },
     {
-      keywords: ["faculty only", "dca(diploma in computer application)", "dca"],
+      keywords: ["teacher","instructor","tutor","educator","faculty only", "dca(diploma in computer application)", "dca"],
       response: "The DCA (Diploma in Computer Application) is taught by Daljit Singh."
     },
     {
@@ -94,7 +94,7 @@ export const ChatWidget = () => {
       response: "The ADCA (Advanced Diploma in Computer Application) aims to develop advanced skills in computer applications for specialized roles. It is taught by Kamaljit Kaur. The fee is Rs 12400, and the duration is 12 hours."
     },
     {
-      keywords: ["fees only", "adca(advanced diploma in computer application)", "adca"],
+      keywords: ["cost","charge","rate","amount","price","fees only", "adca(advanced diploma in computer application)", "adca"],
       response: "The fee for the ADCA (Advanced Diploma in Computer Application) is Rs 12400."
     },
     {
@@ -102,7 +102,7 @@ export const ChatWidget = () => {
       response: "The duration of the ADCA (Advanced Diploma in Computer Application) is 12 hours."
     },
     {
-      keywords: ["faculty only", "adca(advanced diploma in computer application)", "adca"],
+      keywords: ["teacher","instructor","tutor","educator","faculty only", "adca(advanced diploma in computer application)", "adca"],
       response: "The ADCA (Advanced Diploma in Computer Application) is taught by Kamaljit Kaur."
     },
     {
@@ -110,7 +110,7 @@ export const ChatWidget = () => {
       response: "The ADCFA (Advanced Diploma in Computer Financial Accounting) aims to train in financial accounting software for business applications. It is taught by Gurdarshan Kaur. The fee is Rs 15600, and the duration is 12 hours."
     },
     {
-      keywords: ["fees only", "adcfa(advanced diploma in computer financial accounting)", "adcfa"],
+      keywords: ["cost","charge","rate","amount","price","fees only", "adcfa(advanced diploma in computer financial accounting)", "adcfa"],
       response: "The fee for the ADCFA (Advanced Diploma in Computer Financial Accounting) is Rs 15600."
     },
     {
@@ -118,7 +118,7 @@ export const ChatWidget = () => {
       response: "The duration of the ADCFA (Advanced Diploma in Computer Financial Accounting) is 12 hours."
     },
     {
-      keywords: ["faculty only", "adcfa(advanced diploma in computer financial accounting)", "adcfa"],
+      keywords: ["teacher","instructor","tutor","educator","faculty only", "adcfa(advanced diploma in computer financial accounting)", "adcfa"],
       response: "The ADCFA (Advanced Diploma in Computer Financial Accounting) is taught by Gurdarshan Kaur."
     },
     {
@@ -126,7 +126,7 @@ export const ChatWidget = () => {
       response: "The DCTT (Diploma Computer Teacher Training Course) aims to prepare educators to teach computer skills effectively. It is taught by Kamaljit Kaur. The fee is Rs 15600, and the duration is 12 hours."
     },
     {
-      keywords: ["fees only", "dctt(diploma computer teacher training course)", "dctt"],
+      keywords: ["cost","charge","rate","amount","price","fees only", "dctt(diploma computer teacher training course)", "dctt"],
       response: "The fee for the DCTT (Diploma Computer Teacher Training Course) is Rs 15600."
     },
     {
@@ -134,7 +134,7 @@ export const ChatWidget = () => {
       response: "The duration of the DCTT (Diploma Computer Teacher Training Course) is 12 hours."
     },
     {
-      keywords: ["faculty only", "dctt(diploma computer teacher training course)", "dctt"],
+      keywords: ["teacher","instructor","tutor","educator","faculty only", "dctt(diploma computer teacher training course)", "dctt"],
       response: "The DCTT (Diploma Computer Teacher Training Course) is taught by Kamaljit Kaur."
     },
     {
@@ -142,7 +142,7 @@ export const ChatWidget = () => {
       response: "The D.O.M.A (Diploma in Office Management Application) aims to teach office management software for efficient administrative tasks. It is taught by Gurdarshan Kaur. The fee is Rs 8000, and the duration is 6 hours."
     },
     {
-      keywords: ["fees only", "d.o.m.a(diploma in office management application)", "d.o.m.a", "doma"],
+      keywords: ["cost","charge","rate","amount","price","fees only", "d.o.m.a(diploma in office management application)", "d.o.m.a", "doma"],
       response: "The fee for the D.O.M.A (Diploma in Office Management Application) is Rs 8000."
     },
     {
@@ -150,7 +150,7 @@ export const ChatWidget = () => {
       response: "The duration of the D.O.M.A (Diploma in Office Management Application) is 6 hours."
     },
     {
-      keywords: ["faculty only", "d.o.m.a(diploma in office management application)", "d.o.m.a", "doma"],
+      keywords: ["teacher","instructor","tutor","educator","faculty only", "d.o.m.a(diploma in office management application)", "d.o.m.a", "doma"],
       response: "The D.O.M.A (Diploma in Office Management Application) is taught by Gurdarshan Kaur."
     },
     {
@@ -158,7 +158,7 @@ export const ChatWidget = () => {
       response: "The Tally with GST course aims to enable proficiency in Tally software for accounting and GST compliance. It is taught by Daljit Singh. The fee is Rs 4000, and the duration is 6 hours."
     },
     {
-      keywords: ["fees only", "tally with gst", "tally"],
+      keywords: ["cost","charge","rate","amount","price","fees only", "tally with gst", "tally"],
       response: "The fee for the Tally with GST course is Rs 4000."
     },
     {
@@ -166,7 +166,7 @@ export const ChatWidget = () => {
       response: "The duration of the Tally with GST course is 6 hours."
     },
     {
-      keywords: ["faculty only", "tally with gst", "tally"],
+      keywords: ["teacher","instructor","tutor","educator","faculty only", "tally with gst", "tally"],
       response: "The Tally with GST course is taught by Daljit Singh."
     },
     {
@@ -182,7 +182,7 @@ export const ChatWidget = () => {
       response: "The duration of the Advance Excel course is 1-2 months."
     },
     {
-      keywords: ["faculty only", "advance excel", "advanced excel"],
+      keywords: ["teacher","instructor","tutor","educator","faculty only", "advance excel", "advanced excel"],
       response: "The Advance Excel course is taught by Kamaljit Kaur."
     },
     {
@@ -238,7 +238,7 @@ export const ChatWidget = () => {
       response: "The Data Entry course aims to develop skills for accurate and efficient data entry tasks. It is taught by Daljit Singh. The fee is Rs 8000, and the duration is 6 hours."
     },
     {
-      keywords: ["fees only", "data entry"],
+      keywords: ["cost","charge","rate","amount","price","fees only", "data entry"],
       response: "The fee for the Data Entry course is Rs 8000."
     },
     {
@@ -246,7 +246,7 @@ export const ChatWidget = () => {
       response: "The duration of the Data Entry course is 6 hours."
     },
     {
-      keywords: ["faculty only", "data entry"],
+      keywords: ["teaches","teacher","instructor","tutor","educator","faculty only", "data entry"],
       response: "The Data Entry course is taught by Daljit Singh."
     },
     {
@@ -416,22 +416,186 @@ export const ChatWidget = () => {
   ];
 
   function getPredefinedResponse(input) {
-    // Remove trailing question mark, punctuation, and extra whitespace
+    // Normalize input: lowercase, trim, remove trailing punctuation
     input = input.toLowerCase().trim().replace(/[?!.]+$/, '');
-    
-    let bestMatch = null;
-    let maxMatches = 0;
 
-    // Prioritize specific "fees only", "duration only", "faculty only" queries
-    for (let item of predefinedResponses) {
-      if (item.keywords.includes("fees only") || item.keywords.includes("duration only") || item.keywords.includes("faculty only")) {
-        if (item.keywords.every(keyword => input.includes(keyword))) {
-          return item.response;
-        }
+    // Define comprehensive list of prefixes for course-related queries
+    const prefixes = [
+      "what is the",
+      "what are the",
+      "who is the",
+      "who are the",
+      "who teaches",
+      "what is",
+      "who is",
+      "how much is the",
+      "how long is the",
+      "how much is",
+      "how long is",
+      "tell me",
+      "tell me the",
+      "tell me about",
+      "tell me about the",
+      "tell me the details about",
+      "tell me details",
+      "tell me the details",
+      "can you tell me",
+      "can you tell me the",
+      "can you please",
+      "could you tell me",
+      "could you please",
+      "please tell me",
+      "please provide",
+      "please provide the",
+      "please give me",
+      "please give me the",
+      "please share",
+      "please share the",
+      "please let me know",
+      "please let me know the",
+      "could you let me know",
+      "could you let me know the",
+      "can you let me know",
+      "can you let me know the",
+      "what's the",
+      "who's the",
+      "how much does the",
+      "how long does the",
+      "give me the",
+      "give me",
+      "provide the",
+      "provide",
+      "share the",
+      "share",
+      "let me know",
+      "let me know the",
+      "i want to know",
+      "i want to know the",
+      "i'd like to know",
+      "i'd like to know the",
+      "i need to know",
+      "i need to know the",
+      "i'm curious about",
+      "i'm curious about the",
+      "i'm interested in",
+      "i'm interested in the",
+      "can you provide",
+      "can you provide the",
+      "could you provide",
+      "could you provide the",
+      "can you give me",
+      "can you give me the",
+      "could you give me",
+      "could you give me the",
+      "can you share",
+      "can you share the",
+      "could you share",
+      "could you share the",
+      "what are",
+      "who are",
+      "how much are",
+      "how long are",
+      "what does the",
+      "who does the",
+      "how much does",
+      "how long does",
+      "tell me more about",
+      "tell me more about the",
+      "can you explain",
+      "can you explain the",
+      "could you explain",
+      "could you explain the",
+      "please explain",
+      "please explain the",
+      "i want details on",
+      "i want details on the",
+      "i need details on",
+      "i need details on the",
+      "i'd like details on",
+      "i'd like details on the",
+      "what is the cost of",
+      "what is the duration of",
+      "who is teaching",
+      "who teaches the",
+      "what is the price of",
+      "what is the length of",
+      "can you inform me",
+      "can you inform me about",
+      "could you inform me",
+      "could you inform me about",
+      "please inform me",
+      "please inform me about",
+      "i want information on",
+      "i want information on the",
+      "i need information on",
+      "i need information on the",
+      "i'd like information on",
+      "i'd like information on the",
+      "can you clarify",
+      "can you clarify the",
+      "could you clarify",
+      "could you clarify the",
+      "please clarify",
+      "please clarify the",
+      "what is the fee for",
+      "what is the time for",
+      "who is the instructor for",
+      "who is the teacher for",
+      "can you specify",
+      "can you specify the",
+      "could you specify",
+      "could you specify the",
+      "please specify",
+      "please specify the",
+      "i'm looking for",
+      "i'm looking for the",
+      "i want to find out",
+      "i want to find out the",
+      "i need to find out",
+      "i need to find out the",
+      "i'd like to find out",
+      "i'd like to find out the",
+      "can you detail",
+      "can you detail the",
+      "could you detail",
+      "could you detail the",
+      "please detail",
+      "please detail the",
+      "what is the charge for",
+      "what is the period of",
+      "who is the faculty for",
+      "can you outline",
+      "can you outline the",
+      "could you outline",
+      "could you outline the",
+      "please outline",
+      "please outline the",
+      "i want to understand",
+      "i want to understand the",
+      "i need to understand",
+      "i need to understand the",
+      "i'd like to understand",
+      "i'd like to understand the"
+    ];
+
+    // Remove prefixes to extract core query
+    let coreInput = input;
+    for (const prefix of prefixes) {
+      if (coreInput.startsWith(prefix + " ")) {
+        coreInput = coreInput.slice(prefix.length).trim();
+        break;
       }
     }
 
-    // Check for "fees of <course>", "duration of <course>", "faculty of <course>"
+    // Remove stray "the" at the start of coreInput if present
+    if (coreInput.startsWith("the ")) {
+      coreInput = coreInput.slice(4).trim();
+    }
+
+    let bestMatch = null;
+    let maxMatches = 0;
+
+    // Check for "fees of <course>", "duration of <course>", "faculty of <course>" first
     const courseKeywords = [
       "basic computer course",
       "120 hrs computer course",
@@ -451,24 +615,33 @@ export const ChatWidget = () => {
     ].filter((keyword, index, self) => self.indexOf(keyword) === index); // Remove duplicates
 
     for (const course of courseKeywords) {
-      if (input === `fees of ${course}` || input === `fee of ${course}`) {
+      if (coreInput === `fees of ${course}` || coreInput === `fee of ${course}`) {
         const feeItem = predefinedResponses.find(item => item.keywords.includes("fees only") && item.keywords.includes(course));
         if (feeItem) return feeItem.response;
       }
-      if (input === `duration of ${course}`) {
+      if (coreInput === `duration of ${course}`) {
         const durationItem = predefinedResponses.find(item => item.keywords.includes("duration only") && item.keywords.includes(course));
         if (durationItem) return durationItem.response;
       }
-      if (input === `faculty of ${course}` || input === `teacher of ${course}` || input === `instructor of ${course}`) {
+      if (coreInput === `faculty of ${course}` || coreInput === `teacher of ${course}` || coreInput === `instructor of ${course}`) {
         const facultyItem = predefinedResponses.find(item => item.keywords.includes("faculty only") && item.keywords.includes(course));
         if (facultyItem) return facultyItem.response;
+      }
+    }
+
+    // Check for direct "fees only", "duration only", "faculty only" queries
+    for (let item of predefinedResponses) {
+      if (item.keywords.includes("fees only") || item.keywords.includes("duration only") || item.keywords.includes("faculty only")) {
+        if (item.keywords.every(keyword => coreInput.includes(keyword))) {
+          return item.response;
+        }
       }
     }
 
     // Check for "best", "recommended", "demanding", etc. queries
     for (let item of predefinedResponses) {
       if (item.keywords.includes("best")) {
-        if (item.keywords.some(keyword => input.includes(keyword))) {
+        if (item.keywords.some(keyword => coreInput.includes(keyword))) {
           return item.response;
         }
       }
@@ -477,29 +650,35 @@ export const ChatWidget = () => {
     // Check for exact matches for courses with exactOnly or exactMatch
     for (let item of predefinedResponses) {
       if (item.exactMatch || item.exactOnly) {
-        if (item.keywords.includes(input)) {
+        if (item.keywords.includes(coreInput)) {
           return item.response;
         }
       }
     }
 
-    // Check for exact course names "basic computer course" and "120 hrs computer course"
+    // Check for exact course names for full course details
     for (let item of predefinedResponses) {
-      if (item.keywords.includes("basic computer course") && input === "basic computer course") {
+      if (item.keywords.includes("basic computer course") && coreInput === "basic computer course") {
         return item.response;
       }
-      if (item.keywords.includes("120 hrs computer course") && input === "120 hrs computer course") {
+      if (item.keywords.includes("120 hrs computer course") && coreInput === "120 hrs computer course") {
         return item.response;
+      }
+      // Handle other courses without "fees only", "duration only", "faculty only"
+      if (!item.keywords.includes("fees only") && !item.keywords.includes("duration only") && !item.keywords.includes("faculty only")) {
+        if (item.keywords.includes(coreInput)) {
+          return item.response;
+        }
       }
     }
 
     // Check if input contains "computer" or "compute course" as standalone terms
-    if (/\b(computer|compute course)\b/.test(input) && !input.includes("fees only") && !input.includes("duration only") && !input.includes("faculty only")) {
+    if (/\b(computer|compute course)\b/.test(coreInput) && !coreInput.includes("fees only") && !coreInput.includes("duration only") && !coreInput.includes("faculty only")) {
       return "We have numerous computer courses. Which course are you interested in?";
     }
 
     // Check if input contains "course" or "courses" as a standalone word
-    if (/\b(course|courses)\b/.test(input) && !input.includes("fees only") && !input.includes("duration only") && !input.includes("faculty only")) {
+    if (/\b(course|courses)\b/.test(coreInput) && !coreInput.includes("fees only") && !coreInput.includes("duration only") && !coreInput.includes("faculty only")) {
       return "We offer a wide range of courses:\n1. Basic Computer Course\n2. 120 hrs Computer Course\n3. DCA(Diploma in Computer Application)\n4. ADCA(Advanced Diploma in Computer Application)\n5. ADCFA(Advanced Diploma in Computer Financial Application)\n6. DCTT(Diploma Computer Teacher Training Course)\n7. D.O.M.A(Diploma in Office Management Application)\n8. Tally with GST\n9. Advance Excel\n10. Typing Course(English and Punjabi)\n11. HTML and DHTML\n12. English Spoken\n13. Data Entry\n14. Internet\n15. Catpro\n\nWhich course would you like more details about?";
     }
 
@@ -511,7 +690,7 @@ export const ChatWidget = () => {
           const singular = keyword.endsWith("s") ? keyword.slice(0, -1) : keyword;
           const plural = singular + "s";
           let matchCount = 0;
-          if (input.includes(keyword) || input.includes(singular) || input.includes(plural)) {
+          if (coreInput.includes(keyword) || coreInput.includes(singular) || coreInput.includes(plural)) {
             matchCount = 1;
             // Boost matches for specific queries (fees, duration, faculty)
             if (["duration", "how long", "time", "length", "course duration", "faculty", "teacher", "instructor", "who teaches", "professor", "trainer", "price", "pricing", "cost", "costing", "fees", "charges", "cost of", "how much", "price of"].includes(keyword)) {
@@ -520,16 +699,16 @@ export const ChatWidget = () => {
           }
           // Special handling for complex course names
           if (keyword === "d.o.m.a(diploma in office management application)") {
-            if (input.includes("doma") || input.includes("office management") || input.includes("d.o.m.a")) {
+            if (coreInput.includes("doma") || coreInput.includes("office management") || coreInput.includes("d.o.m.a")) {
               matchCount = 1;
             }
           }
           if (keyword === "typing course(english and punjabi)") {
-            if (input.includes("typing course") || input.includes("english punjabi typing") || input.includes("typing")) {
+            if (coreInput.includes("typing course") || coreInput.includes("english punjabi typing") || coreInput.includes("typing")) {
               matchCount = 1;
             }
           }
-          if (keyword === "html and dhtml" && input.includes("html dhtml")) {
+          if (keyword === "html and dhtml" && coreInput.includes("html dhtml")) {
             matchCount = 1;
           }
           return count + matchCount;
@@ -601,7 +780,7 @@ export const ChatWidget = () => {
           aiResponse = predefined;
         } else {
           const geminiResponse = await callGeminiAPI(question);
-          aiResponse = geminiResponse.toLowerCase().includes("institute seated") || geminiResponse.toLowerCase().includes("e-learning")
+          aiResponse = geminiResponse.toLowerCase().includes("institute") || geminiResponse.toLowerCase().includes("e-learning")
             ? geminiResponse
             : "I am sorry, but I can only answer questions related to our e-learning platform.";
         }

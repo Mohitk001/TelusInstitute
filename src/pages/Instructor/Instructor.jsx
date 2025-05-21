@@ -2,52 +2,10 @@ import React, { useEffect, useRef } from "react";
 import { FaUsers, FaChalkboardTeacher, FaStar, FaStarHalfAlt } from "react-icons/fa";
 import { GiBookshelf } from "react-icons/gi";
 import { MdOnlinePrediction } from "react-icons/md";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { instructors } from "../../components/assets/data/data";
 import "./Instructor.css";
 
 export const Instructor = () => {
-  // Carousel settings
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    centerMode: true,
-    centerPadding: "20px",
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerPadding: "15px",
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: "10px",
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          centerPadding: "5px",
-        },
-      },
-    ],
-  };
-
   return (
     <div className="instructor">
       <section className="instructor py-12 md:py-16">
@@ -116,13 +74,13 @@ export const Instructor = () => {
               <InstructorCard
                 color="text-red-500"
                 icon={<FaUsers size={40} />}
-                title="500+"
+                title="500"
                 desc="Students Enrolled"
               />
               <InstructorCard
                 color="text-orange-500"
                 icon={<GiBookshelf size={40} />}
-                title="10+"
+                title="10"
                 desc="Total Courses"
               />
               <InstructorCard
@@ -140,7 +98,7 @@ export const Instructor = () => {
             </div>
           </div>
 
-          {/* Instructor Carousel Section */}
+          {/* Instructor Static Grid Section */}
           <div className="content mt-12 md:mt-16">
             <div className="heading py-8 md:py-12 text-center w-full mx-auto">
               <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black">
@@ -150,12 +108,10 @@ export const Instructor = () => {
                 Learn from the best in the industry and gain valuable insights to excel in your career.
               </span>
             </div>
-            <div className="slider-container px-2 sm:px-4">
-              <Slider {...settings}>
-                {instructors.map((instructor) => (
-                  <InstructorProfile key={instructor.id} {...instructor} />
-                ))}
-              </Slider>
+            <div className="instructor-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-2 sm:px-4">
+              {instructors.map((instructor) => (
+                <InstructorProfile key={instructor.id} {...instructor} />
+              ))}
             </div>
           </div>
         </div>
@@ -170,8 +126,10 @@ const InstructorProfile = ({ name, rating, photo, subject, experience, hoursTaug
   const hoursTaughtRef = useRef(null);
 
   useEffect(() => {
-    animateNumber(experienceRef.current, experience);
-    animateNumber(hoursTaughtRef.current, hoursTaught);
+    if (experienceRef.current && hoursTaughtRef.current) {
+      animateNumber(experienceRef.current, experience);
+      animateNumber(hoursTaughtRef.current, hoursTaught);
+    }
   }, [experience, hoursTaught]);
 
   const animateNumber = (element, target) => {
@@ -189,8 +147,8 @@ const InstructorProfile = ({ name, rating, photo, subject, experience, hoursTaug
   };
 
   return (
-    <div className="p-2 sm:p-4">
-      <div className="box p-4 sm:p-6 rounded-2xl shadow-lg bg-white text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-purple-500 hover:glow">
+    <div className="p-2 sm:p-4 w-full">
+      <div className="box p-4 sm:p-6 rounded-2xl shadow-lg bg-white text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-purple-500 hover:glow h-full">
         <img
           src={photo}
           alt={name}
@@ -230,27 +188,25 @@ export const InstructorCard = ({ color, icon, title, desc }) => {
   useEffect(() => {
     const currentRef = countRef.current;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateNumber(currentRef, parseInt(title));
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
     if (currentRef) {
-      observer.observe(currentRef);
-    }
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              animateNumber(currentRef, parseInt(title));
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
 
-    return () => {
-      if (currentRef) {
+      observer.observe(currentRef);
+
+      return () => {
         observer.unobserve(currentRef);
-      }
-    };
+      };
+    }
   }, [title]);
 
   const animateNumber = (element, target) => {
@@ -260,15 +216,15 @@ export const InstructorCard = ({ color, icon, title, desc }) => {
       current += increment;
       if (current >= target) {
         clearInterval(interval);
-        element.textContent = target + (target === 95 ? "%" : "+");
+        element.textContent = target + (target === 97 ? "%" : "+");
       } else {
-        element.textContent = Math.floor(current) + (target === 95 ? "%" : "+");
+        element.textContent = Math.floor(current) + (target === 97 ? "%" : "+");
       }
     }, 10);
   };
 
   return (
-    <div className="box p-4 sm:p-6 rounded-2xl shadow-lg bg-white text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-purple-500 hover:glow h-44 sm:h-48 md:h-64">
+    <div className="box p-4 sm:p-6 rounded-2xl shadow-lg bg-white text-center hover:shadow-xl transition-all duration-300 border-2 border-transparent hover:border-purple-500 hover:glow">
       <div className={`${color} mb-3 sm:mb-4`}>{icon}</div>
       <div className="text">
         <h4 ref={countRef} className="text-xl sm:text-2xl md:text-3xl font-bold text-black">
