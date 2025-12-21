@@ -7,13 +7,14 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// MongoDB connection
-const mongoUri = "mongodb+srv://telusinstitute:Telus&0960@cluster0.tfp7ddw.mongodb.net/certification_db?retryWrites=true&w=majority";
-mongoose.connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log('MongoDB connected'))
-  .catch(err => console.log(err));
+// 1. Updated connection (Removed deprecated options to stop warnings)
+const mongoUri = process.env.MONGO_URI || "mongodb+srv://telusadmin:80LGVVhsBKGh5WWq@cluster0.bahwf.mongodb.net/certification_db?retryWrites=true&w=majority";
 
-// Certificate model - updated to include Picture as URL
+mongoose.connect(mongoUri)
+  .then(() => console.log('✅ MongoDB connected successfully'))
+  .catch(err => console.error('❌ MongoDB connection error:', err));
+
+// 2. Certificate model (Matches your JSON keys exactly)
 const Certificate = mongoose.model('Certificate', new mongoose.Schema({
   "Student's Name": String,
   "Father's Name": String,
@@ -22,24 +23,21 @@ const Certificate = mongoose.model('Certificate', new mongoose.Schema({
   "Course Name Enrolled in": String,
   "Course Duration": String,
   "Certificate Issue Date": String,
-  Picture: String // Now stores URL of the image
+  "Picture": String 
 }), 'certificates');
 
-// API endpoint to fetch certificate
+// 3. API endpoint
 app.get('/api/certificate/:enrollmentId', async (req, res) => {
   try {
-    // Search by "Enrollment Number ID" field with exact match
-    const certificate = await Certificate.findOne({ 
-      "Enrollment Number ID": req.params.enrollmentId.trim() 
-    });
+    const id = req.params.enrollmentId.trim();
+    const certificate = await Certificate.findOne({ "Enrollment Number ID": id });
     
     if (!certificate) {
-      console.log('No certificate found for:', req.params.enrollmentId);
+      console.log('Not Found:', id);
       return res.status(404).json({ error: 'Certificate not found' });
     }
     
-    // Transform to frontend-friendly format
-    const transformedCertificate = {
+    res.json({
       enrollmentId: certificate["Enrollment Number ID"],
       name: certificate["Student's Name"],
       fatherName: certificate["Father's Name"],
@@ -47,15 +45,13 @@ app.get('/api/certificate/:enrollmentId', async (req, res) => {
       courseName: certificate["Course Name Enrolled in"],
       courseDuration: certificate["Course Duration"],
       certificateIssueDate: certificate["Certificate Issue Date"],
-      picture: certificate.Picture || '' // Return URL of the image
-    };
-    
-    res.json(transformedCertificate);
+      picture: certificate["Picture"] || '' 
+    });
   } catch (err) {
-    console.error('Error:', err);
+    console.error('Server Error:', err);
     res.status(500).json({ error: 'Server error' });
   }
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
