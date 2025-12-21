@@ -84,7 +84,7 @@ export function Certificate() {
                     className="student-image"
                     onError={(e) => {
                       e.target.onerror = null; 
-                      e.target.src = 'https://via.placeholder.com/150';
+                      e.target.src = `https://ui-avatars.com/api/?name=${certificate.name}&background=random`;
                     }}
                   />
                 </div>
