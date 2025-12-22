@@ -79,7 +79,7 @@ export function Certificate() {
               {certificate.picture ? (
                 <div className="student-image-container">
                   <img 
-                    src={certificate.picture} 
+                    src={certificate.Picture} 
                     alt="Student" 
                     className="student-image"
                     onError={(e) => {
